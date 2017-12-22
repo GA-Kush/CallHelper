@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolBar"
+    tools:context="com.greenapex.callhelper.Activity.Setting">
+
+    <include
+        android:id="@+id/toolbarSetting"
+        layout="@layout/app_setting_toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarSetting"
+        android:background="@drawable/roundshape">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            app:cardBackgroundColor="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relativeSetting1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txtsettingNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10dp"
+                        android:text="Display contact notes on incoming calls"
+                        android:textColor="@color/font" />
+
+                    <Switch
+                        android:id="@+id/switchsettingNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/relativeSetting1"
+                    android:background="@color/background"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeSetting2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeSetting1">
+
+                    <TextView
+                        android:id="@+id/txtsettingNoteNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10dp"
+                        android:text="Number Of Callnote on incoming call"
+                        android:textColor="@color/font" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/relativeSetting2"
+                    android:background="@color/background"></RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeSetting3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeSetting2">
+
+                    <TextView
+                        android:id="@+id/txtsettingOutgoingCall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10dp"
+                        android:text="Display Contact notes on outgoing calls"
+                        android:textColor="@color/font" />
+
+                    <Switch
+                        android:id="@+id/switchsettingOutgoingCall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/relativeSetting3"
+                    android:background="@color/background"></RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relativeSetting4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeSetting3">
+
+                    <TextView
+                        android:id="@+id/txtsettingCallComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10dp"
+                        android:text="Display callnotes or reminder after Call complete"
+                        android:textColor="@color/font" />
+
+                    <Switch
+                        android:id="@+id/switchsettingCallComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/relativeSetting4"
+                    android:background="@color/background"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeSetting5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeSetting4">
+
+                    <ImageView
+                        android:id="@+id/imgAbout"
+                        android:layout_width="@dimen/margin_20dp"
+                        android:layout_height="@dimen/margin_20dp"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/about" />
+
+                    <TextView
+                        android:id="@+id/txtsettingAbout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10dp"
+                        android:layout_toRightOf="@+id/imgAbout"
+                        android:text="About"
+                        android:textColor="@color/font" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/relativeSetting5"
+                    android:background="@color/background"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeSetting6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeSetting5">
+
+                    <ImageView
+                        android:id="@+id/imgFAQ"
+                        android:layout_width="@dimen/margin_20dp"
+                        android:layout_height="@dimen/margin_20dp"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/faq" />
+
+                    <TextView
+                        android:id="@+id/txtsettingFAQ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10dp"
+                        android:layout_toRightOf="@+id/imgFAQ"
+                        android:text="FAQ"
+                        android:textColor="@color/font" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/relativeSetting6"
+                    android:background="@color/background"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeSetting7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeSetting6">
+
+                    <ImageView
+                        android:id="@+id/imgTermsofUse"
+                        android:layout_width="@dimen/margin_20dp"
+                        android:layout_height="@dimen/margin_20dp"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/terms" />
+
+                    <TextView
+                        android:id="@+id/txtsettingTermsofUse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10dp"
+                        android:layout_toRightOf="@+id/imgTermsofUse"
+                        android:text="Terms of use"
+                        android:textColor="@color/font" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/relativeSetting7"
+                    android:background="@color/background"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeSetting8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeSetting7">
+
+                    <ImageView
+                        android:id="@+id/imgPrivacy"
+                        android:layout_width="@dimen/margin_20dp"
+                        android:layout_height="@dimen/margin_20dp"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/privacy" />
+
+                    <TextView
+                        android:id="@+id/txtsettingPrivacyPolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10dp"
+                        android:layout_toRightOf="@+id/imgPrivacy"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/font" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/relativeSetting8"
+                    android:background="@color/background"></RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeSetting8">
+
+                    <ImageView
+                        android:id="@+id/imgHelp"
+                        android:layout_width="@dimen/margin_20dp"
+                        android:layout_height="@dimen/margin_20dp"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/help" />
+
+                    <TextView
+                        android:id="@+id/txtsettingHelp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_10dp"
+                        android:layout_toRightOf="@+id/imgHelp"
+                        android:text="Help"
+                        android:textColor="@color/font" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

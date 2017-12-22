@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/toolBar"
+    android:minHeight="?attr/actionBarSize"
+    android:orientation="vertical"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/margin_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call Helper"
+            android:textSize="@dimen/text_15sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="@dimen/margin_20dp"
+            android:layout_height="@dimen/margin_20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btnSetting"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@drawable/search"/>
+
+        <Button
+            android:id="@+id/btnSetting"
+            android:layout_width="@dimen/margin_20dp"
+            android:layout_height="@dimen/margin_20dp"
+            android:background="@drawable/setting"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:layout_marginLeft="@dimen/margin_10dp"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        app:cardCornerRadius="@dimen/margin_10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_5dp">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5dp">
+
+                <ImageView
+                    android:id="@+id/imgReminderContact"
+                    android:layout_width="@dimen/margin_30dp"
+                    android:layout_height="@dimen/margin_30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/txtReminderName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/imgReminderContact"
+                    android:text="Kush Shah"
+                    android:textColor="@color/font" />
+
+                <TextView
+                    android:id="@+id/txtReminderCreateDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtReminderName"
+                    android:layout_toRightOf="@id/imgReminderContact"
+                    android:text="created: 04:15PM 11/10/2017"
+                    android:textColor="@color/font2"
+                    android:textSize="@dimen/text_10sp" />
+
+                <Button
+                    android:id="@+id/btnReminderSetting"
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_setting" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtReminderNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative1"
+                android:layout_margin="@dimen/margin_5dp"
+                android:text="Chocolate Laene Javani 6e"
+                android:textColor="@color/font" />
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtReminderNote"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="@dimen/margin_10dp"
+                    android:layout_height="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/reminder" />
+
+                <TextView
+                    android:id="@+id/txtReminderDateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img"
+                    android:text="In 10 Days,12:00PM"
+                    android:textColor="@color/toolBar"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_10sp" />
+
+
+            </RelativeLayout>
+
+            
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

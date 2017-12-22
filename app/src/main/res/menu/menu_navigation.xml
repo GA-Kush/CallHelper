@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_callHistory"
+        android:icon="@drawable/calllhistory"
+        android:title="CallLog"></item>
+
+    <item
+        android:id="@+id/menuContact"
+        android:icon="@drawable/contact"
+        android:title="Contact"></item>
+
+    <item
+        android:id="@+id/menuNote"
+        android:icon="@drawable/callnote"
+        android:title="Note"></item>
+
+    <item
+        android:id="@+id/menuReminder"
+        android:icon="@drawable/reminder"
+        android:title="Reminder"></item>
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeDelete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_30dp"
+        android:background="#fb5c5c">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_centerVertical="true"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="@dimen/margin_25dp"
+            android:layout_height="@dimen/margin_25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:background="@drawable/ic_close_black_24dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="@dimen/margin_80dp"
+        android:layout_height="@dimen/margin_80dp"
+        android:layout_below="@+id/relativeDelete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_30dp"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:src="@drawable/delete" />
+
+    <TextView
+        android:id="@+id/txtDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure want to delete.?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgDelete"
+        android:textColor="#fb5c5c"/>
+    
+    <Button
+
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_30dp"
+        android:text="DELETE"
+        android:layout_below="@+id/txtDelete"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/margin_20dp"
+        android:background="@drawable/button_round"/>
+
+</RelativeLayout>
